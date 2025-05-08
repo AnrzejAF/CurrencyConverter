@@ -13,26 +13,24 @@ struct ConversionCardView: View {
 
                 VStack(spacing: 20) {
                     // Input Section
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text("Wartość")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
+                    HStack {
                         HStack {
                             Text(vm.baseCurrency.flag)
                                 .font(.largeTitle)
-                            Picker("", selection: $vm.baseCurrency) {
-                                ForEach(vm.availableCurrencies, id: \.self) { code in
-                                    Text(code)
-                                }
-                            }
-                            .pickerStyle(.menu)
-                            .frame(maxWidth: 80)
-                            Spacer()
-                            TextField("0", text: $vm.amountText)
-                                .keyboardType(.decimalPad)
-                                .multilineTextAlignment(.trailing)
-                                .frame(width: 100)
                         }
+                        Picker("", selection: $vm.baseCurrency) {
+                            ForEach(vm.availableCurrencies, id: \.self) { code in
+                                Text(code)
+                                    .lineLimit(1)
+                                    .minimumScaleFactor(0.5)
+                            }
+                        }
+                        .pickerStyle(.menu)
+                        Spacer()
+                        TextField("0", text: $vm.amountText)
+                            .keyboardType(.decimalPad)
+                            .multilineTextAlignment(.trailing)
+                            .frame(width: 100)
                     }
 
                     // Swap Button (now in place of Convert)
@@ -55,24 +53,22 @@ struct ConversionCardView: View {
                     }
 
                     // Output Section
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text("Przeliczona wartość")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
+                    HStack {
                         HStack {
                             Text(vm.targetCurrency.flag)
                                 .font(.largeTitle)
-                            Picker("", selection: $vm.targetCurrency) {
-                                ForEach(vm.availableCurrencies, id: \.self) { code in
-                                    Text(code)
-                                }
-                            }
-                            .pickerStyle(.menu)
-                            .frame(maxWidth: 80)
-                            Spacer()
-                            Text(vm.resultText)
-                                .font(.headline)
                         }
+                        Picker("", selection: $vm.targetCurrency) {
+                            ForEach(vm.availableCurrencies, id: \.self) { code in
+                                Text(code)
+                                    .lineLimit(1)
+                                    .minimumScaleFactor(0.5)
+                            }
+                        }
+                        .pickerStyle(.menu)
+                        Spacer()
+                        Text(vm.resultText)
+                            .font(.headline)
                     }
 
                     // Convert Button below output

@@ -2,7 +2,7 @@
 //  CurrencyConverterUITestsLaunchTests.swift
 //  CurrencyConverterUITests
 //
-//  Created by Andrzej on 01/05/2025.
+//  Created by Andrzej on 10/05/2025.
 //
 
 import XCTest
@@ -24,7 +24,6 @@ final class CurrencyConverterUITestsLaunchTests: XCTestCase {
         app.activate()
         app.buttons["Process to converter"].tap()
         let arrowUpArrowButton = app.buttons["arrow.up.arrow.down.circle.fill"]
-        arrowUpArrowButton.tap()
         arrowUpArrowButton.tap()
         app.buttons["USD"].tap()
         app.buttons["GBP"].tap()

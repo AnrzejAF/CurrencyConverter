@@ -2,7 +2,7 @@
 //  CurrencyConverterUITests.swift
 //  CurrencyConverterUITests
 //
-//  Created by Andrzej on 01/05/2025.
+//  Created by Andrzej on 10/05/2025.
 //
 
 import XCTest

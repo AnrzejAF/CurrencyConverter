@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "029458EE-009A-460A-814A-5D979F93B3B3",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "areLocalizationScreenshotsEnabled" : true,
+    "preferredScreenCaptureFormat" : "screenshot",
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:CurrencyConverter.xcodeproj",
+      "identifier" : "AF299C4B2DB31604001BF326",
+      "name" : "CurrencyConverter"
+    },
+    "uiTestingScreenshotsLifetime" : "keepAlways"
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:CurrencyConverter.xcodeproj",
+        "identifier" : "FE19544B2DCF7A34005CA7AF",
+        "name" : "CurrencyConverterUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

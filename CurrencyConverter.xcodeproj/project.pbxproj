@@ -19,6 +19,7 @@
 /* Begin PBXFileReference section */
 		AF299C4C2DB31604001BF326 /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE19544C2DCF7A34005CA7AF /* CurrencyConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE1954572DCF7DDC005CA7AF /* CurrencyConverter.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = CurrencyConverter.xctestplan; path = CurrencyConverterUITests/CurrencyConverter.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -55,6 +56,7 @@
 		AF299C432DB31604001BF326 = {
 			isa = PBXGroup;
 			children = (
+				FE1954572DCF7DDC005CA7AF /* CurrencyConverter.xctestplan */,
 				AF299C4E2DB31604001BF326 /* CurrencyConverter */,
 				FE19544D2DCF7A34005CA7AF /* CurrencyConverterUITests */,
 				AF299C4D2DB31604001BF326 /* Products */,
